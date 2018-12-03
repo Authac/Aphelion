@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http://aphelion.rakuhana.org/.*$ [NC]
+RewriteRule \.(gif|jpg|js|png|css)$ - [F]

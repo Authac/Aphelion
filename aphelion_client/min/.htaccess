@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^(.*\.(css|js))$ min/index.php?g=$1 [L,NC]
+RewriteRule ^([a-z]=.*)  index.php?$1  [L,NE]
+</IfModule>
